@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body> 
+    <center>
+      <img id = "GeicoLizard" width="200px"
+      src=
+      "https://www.pngitem.com/pimgs/m/259-2593452_transparent-geico-lizard-png-geico-insurance-png-download.png" /> 
+    
+      
+      <br>
+      <br>
+      <br>
+      
+
+      <h1 id = "heading1">Insurance Rate Calculator</h1>
+      <br>
+      
+      <input type="text" id = "age" placeholder="Enter your age" />
+      <button id="calculate1"> Calculate </button> 
+      <button id="clear1"> Clear</button> 
+      <br>
+      <br>
+
+
+    <p style = "color:Black; font-size: 30px" id= "prompt" > Your total insurance cost will be shown here in $
+      <p style="color:Green ; font-size:40px" id="result" > 
+    </div>
+    <script 
+
+
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+  </script>
+
+    
+    <script type="text/javascript">
+      $(document).ready(function(){
+       $('#calculate1').click(function() {
+         calculateTaxRate(); 
+
+      
+      });
+
+      // Clear user input
+       $('#clear1').click(function() {
+         $('#age').val("")
+         $('#result').fadeOut();
+
+          
+
+      });
+
+
+
+      
+      
+      function calculateTaxRate (){
+        let age = $('#age').val(); 
+         let total = 5* age + 300;
+
+
+         $('#result').text(total); 
+         $('#result').fadeOut(function(){
+            $(this).text(total).fadeIn(); 
+
+      }); 
+         
+         
+
+      }
+
+
+
+
+
+});
+
+    </script> 
+  </body>
+</html>
